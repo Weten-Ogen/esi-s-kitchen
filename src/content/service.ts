@@ -53,11 +53,6 @@ export const serviceContent = {
     ],
     services: [
         {
-            label: 'buffet service',
-            imageUrl: '/images/buffet.jpg',
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur culpa corrupti molestias rerum reiciendis, reprehenderit, nostrum impedit temporibus voluptatibus vel praesentium, numquam dolores possimus modi consequuntur laborum aliquid voluptatum. Laudantium, laborum amet odit earum consequatur consectetur fuga ab reprehenderit sint ex itaque non quos enim cumque nostrum voluptate odio."
-        },
-        {
             label: 'buffet  and Planning Service',
             imageUrl: '/images/buffet2.jpg',
             description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur culpa corrupti molestias rerum reiciendis, reprehenderit, nostrum impedit temporibus voluptatibus vel praesentium, numquam dolores possimus modi consequuntur laborum aliquid voluptatum. Laudantium, laborum amet odit earum consequatur consectetur fuga ab reprehenderit sint ex itaque non quos enim cumque nostrum voluptate odio."
@@ -65,6 +60,11 @@ export const serviceContent = {
         {
             label: 'Planning and Packaging Service',
             imageUrl: '/images/packs.jpg',
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur culpa corrupti molestias rerum reiciendis, reprehenderit, nostrum impedit temporibus voluptatibus vel praesentium, numquam dolores possimus modi consequuntur laborum aliquid voluptatum. Laudantium, laborum amet odit earum consequatur consectetur fuga ab reprehenderit sint ex itaque non quos enim cumque nostrum voluptate odio."
+        },
+        {
+            label: 'buffet service',
+            imageUrl: '/images/buffet.jpg',
             description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur culpa corrupti molestias rerum reiciendis, reprehenderit, nostrum impedit temporibus voluptatibus vel praesentium, numquam dolores possimus modi consequuntur laborum aliquid voluptatum. Laudantium, laborum amet odit earum consequatur consectetur fuga ab reprehenderit sint ex itaque non quos enim cumque nostrum voluptate odio."
         },
         {

@@ -23,7 +23,7 @@ const FoodCard = (props:  foodcardprops) => {
                 />
         </div> 
            
-            <p className='text-extraSmall text-wrap font-thin capitalize'> 
+            <p className='text-extraSmall text-wrap font-bold capitalize text-secondaryColor '> 
                 {props.label}
             </p>
             

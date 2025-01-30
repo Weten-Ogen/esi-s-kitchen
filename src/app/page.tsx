@@ -1,5 +1,6 @@
 import Filters from "@/components/customs/filters";
 import FoodItems from "@/components/customs/fooditems";
+import Footer from "@/components/customs/footer";
 import Packages from "@/components/customs/packages";
 import Services from "@/components/customs/services";
 
@@ -12,7 +13,7 @@ export default function Home() {
       /> 
       <FoodItems
       />
-      <div className="md:flex md:items-start ">
+      <div className="md:flex md:flex-row-reverse ">
 
         <Packages
           className="mt-20 "
@@ -20,6 +21,7 @@ export default function Home() {
         <Services
       />
       </div>
+      <Footer/>
     </section>
   )
 }
