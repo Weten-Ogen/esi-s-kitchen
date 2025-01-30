@@ -9,7 +9,24 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			poppins : ['poppins']
+		},
+		fontSize: {
+			extraSmall: '0.8rem',
+			primaryFont: '1.2rem',
+			mediumFont: '2.0rem',
+			regularFont:'4.0rem',
+			secondaryFont: '4.2rem',
+			upperFont: '4.8rem',
+			tertiaryFont: '9.8rem'
+		},
   		colors: {
+			primaryColor: "#09090b",
+			secondaryColor:"#fb923c",
+			tintColor: "#ef4444",
+			tertiaryColor: "#f9fafb",
+			errorColor: '#450a0a',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
