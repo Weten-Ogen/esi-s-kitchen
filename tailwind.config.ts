@@ -15,8 +15,8 @@ export default {
 		fontSize: {
 			extraSmall: '0.8rem',
 			primaryFont: '1.2rem',
-			mediumFont: '2.0rem',
-			regularFont:'4.0rem',
+			mediumFont: '1.6rem',
+			regularFont:'2.0rem',
 			secondaryFont: '4.2rem',
 			upperFont: '4.8rem',
 			tertiaryFont: '9.8rem'

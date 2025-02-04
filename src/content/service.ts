@@ -85,9 +85,15 @@ export const serviceContent = {
             imageurl:"/images/filledpack.jpg",
             perHead: '200',
             foodList: [
-                "fufu with groundnut soup",
-                "abunabune soup",
-                "light soup"
+                "fufu with goat light soup or chicken wing light soup",
+                "redred (gob3)  or bambara  beans with kaklo",
+                "apapransa or mpotompotor",
+                "ampesi with palava sauce or garden eggs stews",
+                "kenkey with family",
+                "kokonte or riceball with groundnut soup ",
+                "fufu with goat light soup or chicken wings light soup",
+
+
             ]
         },
         {
@@ -95,9 +101,14 @@ export const serviceContent = {
             imageurl:"/images/buffet2.jpg",
             perHead: '200',
             foodList: [
-                "jollof rice",
-                "banku with tilipia",
-                "riped banana pudding"
+                "jollof",
+                "waakye",
+                "fried rice",
+                "fried chicken",
+                "fried fish",
+                "salad",
+                'spaghetti or kelewele',
+                "banku with okro stew"
             ]
         },
         {
@@ -106,8 +117,19 @@ export const serviceContent = {
             perHead: '200',
             foodList: [
                 "fufu with soup",
-                "bank with okro stew",
-                "kokonte with soup"
+                "bank with grilled tilapia + okro soup",
+                "kokonte or riceball with groundnut soup",
+                "kelewele",
+                "khebab",
+                "gizzard or goat",
+                'waakye',
+                'fish',
+                'salad',
+                'spaghetti',
+                'vegetable rice',
+                'beef sauce',
+                'kenkey  with family or aprapransa',
+
             ]
         },
         {
@@ -131,16 +153,59 @@ export const serviceContent = {
             ]
         },
         {
-            label: 'special sunday package',
+            label: 'standard package',
             imageurl:"/images/packs.jpg",
             perHead: '200',
             foodList: [
-                "mashed potatoes",
-                "red red",
-                "gari and beans"
+                "jollof",
+                "waakye",
+                "fried rice",
+                "fried chicken",
+                "fried fish",
+                "salad",
+                "spaghetti"
             ]
         },
-        
+        {
+            label: 'standard package',
+            imageurl:"/images/fulloption.jpg",
+            perHead: '200',
+            foodList: [
+                "jollof",
+                "waakye",
+                "fried rice",
+                "fried chicken",
+                "fried fish",
+                "salad",
+                "spaghetti"
+            ]
+        },
+        {       
+            label: "esi's special package",
+            imageurl:"/images/eat.jpg",
+            perHead: '200',
+            foodList: [
+                "assorted jollof",
+                "waakye",
+                "assorted fried rice",
+                "fried or grilled chicken",
+                "fried fish",
+                "salad",
+                "spaghetti",
+                "vegetable rice",
+                "gizzard, pork ,  goat , khebab",
+                "kelewele",
+                "banku with grilled tilapia and okro stew",
+                "fufu with ebunuenunu",
+                "fufu with goat light soup",
+                "kokonte or riceball with groundnut soup",
+                "kenkey with family or apapransa with family",
+                "ampesi with palava sauce ",
+                "vegatable stir fry",
+                "chicken sauce",
+                "beef sauce"
+            ]
+        },
 
     ]
 

@@ -10,7 +10,7 @@ interface serviceprops {
 
 const Services = (props: serviceprops) => {
   return (
-    <div className={cn('',props.className)}>
+    <div className={cn('font-poppins',props.className)}>
         <div className='flex flex-col gap-4 p-4'>
             {serviceContent.services.map((item,index) => {
                 return (

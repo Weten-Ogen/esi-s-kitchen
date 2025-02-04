@@ -14,7 +14,7 @@ interface serviceprops {
 const ServiceCard = (props: serviceprops) => {
   return (
     <div className={cn('container max-w-ful w-full p-4 shadow-lg rounded-lg ',props.className)}> 
-        <div className=' w-full md:max-w-[33vw] h-auto'>
+        <div className=' w-full  h-[45vh] overflow-hidden'>
             <Image
                 className='w-full object-cover h-auto'
                 alt={props.label}
@@ -23,7 +23,7 @@ const ServiceCard = (props: serviceprops) => {
                 height={200}
             />
         </div>
-        <div className='max-w-md space-y-2 pt-2'>
+        <div className='max-w-xl space-y-2 pt-2'>
             <div className='flex items-center justify-between'>
             <h2 className='capitalize text-primaryFont font-semibold'>
                 {props.label}
@@ -32,7 +32,7 @@ const ServiceCard = (props: serviceprops) => {
                 book now
             </Button>
             </div>
-            <p className='text-extraSmall font-medium p-2'>
+            <p className='text-extraSmall font-medium border` p-2'>
                 {props.description}
             </p>
         </div>

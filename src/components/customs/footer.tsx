@@ -14,7 +14,7 @@ interface footeprops {
 
 const Footer = (props : footeprops) => {
   return (
-    <div className={cn('bg-secondaryColor text-white', props.className)}>
+    <div className={cn('bg-secondaryColor text-white font-poppins', props.className)}>
       <div className='flex  gap-4 justify-center md:gap-24 p-4 '>
         {linksContent.footerLinks.map((item,index) => {
           return (

@@ -18,7 +18,7 @@ const SearchBtn = (props: searhprops) => {
         clickPoint.current.style.display = "block";
     };
   return (
-            <div className="relative flex-grow mr-3  ">
+            <div className="relative flex-grow mr-3 w-10  ">
                 <div 
                         className="absolute top-3 left-3 items-center"   
                         ref={clickPoint}

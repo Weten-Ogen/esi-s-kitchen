@@ -10,11 +10,8 @@ interface packprops {
 
 const Packages = (props: packprops) => {
   return (
-    <div className={cn('',props.className)}>
-        <div
-
-            className='flex flex-col gap-4 p-4'
-        >
+    <div className={cn('flex flex-col font-poppins',props.className)}>
+        
             {serviceContent.buffetcards.map((item) => {
                 return (
                     <PackageCard
@@ -24,7 +21,7 @@ const Packages = (props: packprops) => {
                 )
             })}
 
-        </div>
+
     </div>
   )
 }

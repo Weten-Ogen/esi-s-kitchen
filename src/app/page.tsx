@@ -13,7 +13,7 @@ export default function Home() {
       /> 
       <FoodItems
       />
-      <div className="md:flex md:flex-row-reverse ">
+      <div className="md:flex md:flex-row-reverse items-start ">
 
         <Packages
           className="mt-20 "

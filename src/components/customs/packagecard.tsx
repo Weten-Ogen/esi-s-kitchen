@@ -14,26 +14,35 @@ interface packageprops {
 
 const PackageCard = (props: packageprops) => {
   return (
-    <div className={cn('w-full grid grid-cols-3 max-w-full items-start md:justify-between gap-4 md:p-8 md:max-w-2xl container shadow-lg  ease-out  cursor-pointer hover:-translate-y-0.5  rounded-lg',props.className)}>
-        <div className='md:max-w-full md:h-auto overflow-hidden '>
+    <div className={cn('w-full grid grid-cols-1 lg:`grid-cols-2 max-w-full items-start md:justify-between gap-4 p-4 md:max-w-2xl container shadow-lg  ease-out  cursor-pointer hover:-translate-y-0.5  rounded-lg',props.className)}>
+        <div className='md:max-w-full  lg:h-[40vh] overflow-hidden '>
             <Image
-                className='object-cover w-full h-auto'
+                className='object-cover w-full border h-auto'
                 src={props.imageurl}
                 alt={props.label}
-                width={180}
-                height={40}
+                width={500}
+                height={400}
             />
         </div>
-        <div className='flex flex-col  gap-4'>
-            <h2 className='text-primaryFont font-semibold capitalize'>
-                {props.label}
-            </h2>
-            <div className='font-thin text-extraSmall flex flex-wrap flex-col'>
+        <div className='flex flex-col  gap-4 w-full'>
+            <div className='flex  justify-between  w-full'>
+                    <h2 className='text-primaryFont font-semibold capitalize'>
+                        {props.label}
+                    </h2>
+                    <p className='text-extraSmall  font-semibold '>
+                        {
+                            props.perHead
+                        }
+                    </p>
+                        
+            </div>
+            <div className='flex flex-col'>
+            <div className='font-thin text-extraSmall grid  grid-cols-1 md:grid-cols-2 gap-2 capitalize border'>
                 {props.foodList.map((item,index) => {
                     return (
                         <div
-                            key={item + index} 
-                            className=''
+                        key={item + index} 
+                        className='border'
                         >
                             {item}
                         </div>
@@ -41,19 +50,13 @@ const PackageCard = (props: packageprops) => {
                 })}
             </div>
         </div>
-        <div className='flex items-end flex-col justify-between gap-4 w-full h-full'>
-            <p className='text-extraSmall  font-semibold '>
-                {
-                    props.perHead
-                }
-            </p>
+        <div className=' flex items-end flex-col justify-between gap-4 w-full h-full flex-wrap'>
             <div>
-
-                <Button className='text-extraSmall px-8 py-2  font-mono text-white bg-secondaryColor tracking-wide '>
+                <Button className='text-extraSmall px-8 py-2  font-mono text-white bg-secondaryColor w-full tracking-wide '>
                     book now
-
                 </Button>
             </div>
+        </div>
         </div>
     </div>
   )
