@@ -29,10 +29,15 @@ const PackageCard = (props: packageprops) => {
                     <h2 className='text-primaryFont font-semibold capitalize'>
                         {props.label}
                     </h2>
-                    <p className='text-extraSmall  font-semibold '>
-                        {
-                            props.perHead
-                        }
+                    <p className='text-extraSmall flex gap-2  font-semibold '>
+                        <span>
+                            minimum
+                        </span>
+                        <span>
+                            {
+                                props.perHead
+                            }
+                        </span>
                     </p>
                         
             </div>

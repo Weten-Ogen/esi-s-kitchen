@@ -1,3 +1,4 @@
+import { CarouselView } from "@/components/customs/carouselview";
 import Filters from "@/components/customs/filters";
 import FoodItems from "@/components/customs/fooditems";
 import Footer from "@/components/customs/footer";
@@ -9,8 +10,9 @@ export default function Home() {
   return (
     <section className="min-h-screen">
       <Filters
-        className="w-full max-w-full  bg-slate-800 text-extraSmall"
+        className="w-full max-w-full  bg-secondaryColor text-extraSmall"
       /> 
+      <CarouselView/>
       <FoodItems
       />
       <div className="md:flex md:flex-row-reverse items-start ">

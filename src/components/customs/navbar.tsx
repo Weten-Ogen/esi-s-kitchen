@@ -12,7 +12,7 @@ interface navprops {
 
 const NavBar = (props : navprops) => {
   return (
-    <section className={cn('max-w-full w-full flex items-center justify-between p-2 bg-secondaryColor font-poppins text-white',props.className)}>
+    <section className={cn('max-w-full w-full flex items-center justify-between p-2  font-poppin bg-white shadow-2xl ',props.className)}>
       <div className='flex items-center gap-2'>
       <Image
         src={generalContent.Logo}
