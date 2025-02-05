@@ -11,9 +11,9 @@ interface foodprops{
 
 const FoodItems = (props: foodprops) => {
   return (
-    <div className={cn('md:p-4 max-w-full font-poppins  w-full overflow-hidden',props.className)}>
+    <div className={cn('md:p-4 max-w-full font-poppins  w-full overflow-hidden ',props.className)}>
         
-        <div className='grid max-w-md md:max-w-full grid-cols-3 md:grid-cols-6 md:justify-center items-end justify-start gap-2  '>
+        <div className='grid max-w-md md:max-w-full grid-cols-2 md:grid-cols-6 md:justify-center items-center  gap-2  '>
             {
                 serviceContent.foodlist.map((item) => {
                     return (

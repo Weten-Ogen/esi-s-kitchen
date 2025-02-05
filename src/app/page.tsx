@@ -15,10 +15,9 @@ export default function Home() {
       <CarouselView/>
       <FoodItems
       />
-      <div className="md:flex md:flex-row-reverse items-start ">
-
+      <div className="md:flex  items-start p-2 gap-4 ">
         <Packages
-          className="mt-20 "
+          className="mt-10 "
           />
         <Services
       />

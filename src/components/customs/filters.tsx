@@ -9,7 +9,7 @@ interface filterprops {
 }
 const Filters = (props :  filterprops) => {
   return (
-    <div className={cn('text-white font-poppins', props.className)}>
+    <div className={cn('text-white w-full max-w-full overflow-hidden font-poppins', props.className)}>
         <div className='flex items-center text-white '>
             {dashboardContent.filters.map((item) => {
                 return(

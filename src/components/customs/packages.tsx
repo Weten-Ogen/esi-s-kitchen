@@ -10,7 +10,7 @@ interface packprops {
 
 const Packages = (props: packprops) => {
   return (
-    <div className={cn('flex flex-col font-poppins',props.className)}>
+    <div className={cn('flex flex-col font-poppins gap-8',props.className)}>
         
             {serviceContent.buffetcards.map((item) => {
                 return (

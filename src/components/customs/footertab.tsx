@@ -10,16 +10,16 @@ interface tabprops {
 const FooterTab = (props: tabprops) => {
   return (
     <div className=''>
-        <div className='flex flex-col gap-4 items-center'>
+        <div className='flex flex-col gap-1    items-center'>
             <h2 className='text-primaryFont capitalize font-medium'>
                 {props.title}
             </h2>
-            <div className='flex flex-col items-center gap-2'>
+            <div className='flex flex-col items-center gap-2 '>
                 {props.links.map((item) => {
                     return (
                         <FooterLink
                             key={item.label}
-                            className='capitalize text-extraSmall font-thin'
+                            className='capitalize text-extraSmall font-thin mt-4'
                             {...item}
                         />
                     )

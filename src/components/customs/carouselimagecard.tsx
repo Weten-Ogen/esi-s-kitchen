@@ -14,8 +14,8 @@ const CarouselImageCard = (props: carouselprops) => {
         <Image
             src={props.src}
             alt={props.label}
-            width={1100}
-            height={1000}
+            width={800}
+            height={500}
             className="object-contain h-auto w-full"
         />
     </div>

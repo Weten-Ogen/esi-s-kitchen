@@ -12,18 +12,18 @@ interface foodcardprops {
 const FoodCard = (props:  foodcardprops) => {
   return (
     <div  className={cn('',props.className)}>
-        <div className='flex items-center flex-col'>
-                <div className='p-2 object-contain '>
+        <div className='flex items-center flex-col p-2'>
+                <div className=' object-contain overflow-hidden shadow-2xl rounded-xl '>
                 <Image  
-                    className='rounded-full  w-full h-auto object-cover'
+                    className=' w-full h-auto object-cover'
                     src={props.imageUrl}
                     alt={props.label}
-                    width={40}
-                    height={40}
+                    width={100}
+                    height={60}
                 />
         </div> 
            
-            <p className='text-extraSmall text-wrap font-bold capitalize text-secondaryColor '> 
+            <p className='text-extraSmall text-wrap text-center font-bold capitalize text-secondaryColor '> 
                 {props.label}
             </p>
             

@@ -22,7 +22,7 @@ export function CarouselView() {
         }} 
         plugins={[
             Autoplay({
-                delay:2000
+                delay:5000
             })
         ]   
         }
@@ -31,9 +31,9 @@ export function CarouselView() {
       <CarouselContent>
         {carouselviewContent.map((item, index) => (
           <CarouselItem key={index}>
-            <div className="p-1 w-full ">
-              <Card>
-                <CardContent className="flex  justify-center w-full ">
+            <div className=" w-full ">
+              <Card className="p-0 m-0">
+                <CardContent className="flex p-0 justify-center w-full ">
                     <CarouselImageCard
                         {...item}
                     />
@@ -43,8 +43,6 @@ export function CarouselView() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   )
 }

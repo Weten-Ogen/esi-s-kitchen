@@ -1,6 +1,89 @@
 export const serviceContent = {
     heading: "",
     subHeading: "",
+    location: [
+        {
+            label:'Accra',
+
+        },
+        {
+            label:'Tema',
+            
+        },
+        {
+            label:'Kumasi',
+            
+        },
+        {
+            label:'Kasoa',
+            
+        }
+    ],
+    serviceSelect: [
+        {
+            label: 'buffet and Planning Service',
+            
+        },
+        {
+            label: 'Planning and Packaging Service',
+            
+        },
+        {
+            label: 'buffet service',
+           
+        },
+        {
+            label: 'Planning, Packaging and Buffet service',
+            
+        },
+        
+        {
+            label: 'Packaging service',
+        },
+    ],
+    eventtype: [
+        {
+            label: 'funeral'
+        },
+        {
+            label: 'engagements'
+        },
+        {
+            label: 'weddings'
+        },
+        {
+            label: 'naming ceremonies'
+        },
+        {
+            label: 'customize parties'
+        },
+    ],
+    packagesSelect: [
+        {
+            label: 'standard package',
+            
+        },
+        {
+            label: 'Premium package',
+            
+        },
+        {
+            label: 'Heritage package',
+            
+        },
+        {
+            label: 'Platinum package',
+            
+        },
+        {
+            label: 'Diamond package',
+            
+        },
+        {       
+            label: "esi's special package",
+        },
+
+    ],
     foodlist : [
         {
             label: 'briased rice',
@@ -53,37 +136,66 @@ export const serviceContent = {
     ],
     services: [
         {
-            label: 'buffet  and Planning Service',
+            label: 'buffet and Planning Service',
             imageUrl: '/images/buffet2.jpg',
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur culpa corrupti molestias rerum reiciendis, reprehenderit, nostrum impedit temporibus voluptatibus vel praesentium, numquam dolores possimus modi consequuntur laborum aliquid voluptatum. Laudantium, laborum amet odit earum consequatur consectetur fuga ab reprehenderit sint ex itaque non quos enim cumque nostrum voluptate odio."
+            description: "We do your buffet and planning for you. All you have to do is focus on your guest for your ceremonies. We will do the setting planning and  also comes with a buffet services. All this for some affordable cost."
         },
         {
             label: 'Planning and Packaging Service',
             imageUrl: '/images/packs.jpg',
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur culpa corrupti molestias rerum reiciendis, reprehenderit, nostrum impedit temporibus voluptatibus vel praesentium, numquam dolores possimus modi consequuntur laborum aliquid voluptatum. Laudantium, laborum amet odit earum consequatur consectetur fuga ab reprehenderit sint ex itaque non quos enim cumque nostrum voluptate odio."
+            description: "It our job to give you the best of dishes based on the package you choose. With Packaging we deliver your food in our parcels and well decorated. You get packages for guest who wish to take dishes home."
         },
         {
             label: 'buffet service',
             imageUrl: '/images/buffet.jpg',
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur culpa corrupti molestias rerum reiciendis, reprehenderit, nostrum impedit temporibus voluptatibus vel praesentium, numquam dolores possimus modi consequuntur laborum aliquid voluptatum. Laudantium, laborum amet odit earum consequatur consectetur fuga ab reprehenderit sint ex itaque non quos enim cumque nostrum voluptate odio."
+            description: "Our buffet service is not limited to only the normal buffet . We do all variance of buffet services depending on your customizations. You have the power to command us to do what you see fit with your food. "
         },
         {
-            label: 'Planning,Packaging and Buffet service',
+            label: 'Planning, Packaging and Buffet service',
             imageUrl: '/images/serveself.jpg',
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur culpa corrupti molestias rerum reiciendis, reprehenderit, nostrum impedit temporibus voluptatibus vel praesentium, numquam dolores possimus modi consequuntur laborum aliquid voluptatum. Laudantium, laborum amet odit earum consequatur consectetur fuga ab reprehenderit sint ex itaque non quos enim cumque nostrum voluptate odio."
+            description: "This is combination of the planning service, packaging plus buffet service. Our prices are moderated to meet your finances. We give you the feeling of luxury at your events . "
         },
         
         {
             label: 'Packaging service',
             imageUrl: '/images/packages.jpg',
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur culpa corrupti molestias rerum reiciendis, reprehenderit, nostrum impedit temporibus voluptatibus vel praesentium, numquam dolores possimus modi consequuntur laborum aliquid voluptatum. Laudantium, laborum amet odit earum consequatur consectetur fuga ab reprehenderit sint ex itaque non quos enim cumque nostrum voluptate odio."
+            description: "To cut cost and also to meet your standards and yet with authentic taste. We also accept orders in bulks for your event . Our only job is to give you the value for your money through a quality, refreshing and tasty dishes."
         },
     ],
     buffetcards: [
         {
+            label: 'standard package',
+            imageurl:"/images/fulloption.jpg",
+            perHead: '50',
+            foodList: [
+                "jollof",
+                "waakye",
+                "fried rice",
+                "fried chicken",
+                "fried fish",
+                "salad",
+                "spaghetti"
+            ]
+        },
+        {
+            label: 'Premium package',
+            imageurl:"/images/buffet2.jpg",
+            perHead: '60',
+            foodList: [
+                "jollof",
+                "waakye",
+                "fried rice",
+                "fried chicken",
+                "fried fish",
+                "salad",
+                'spaghetti or kelewele',
+                "banku with okro stew"
+            ]
+        },
+        {
             label: 'Heritage package',
             imageurl:"/images/filledpack.jpg",
-            perHead: '200',
+            perHead: '75',
             foodList: [
                 "fufu with goat light soup or chicken wing light soup",
                 "redred (gob3)  or bambara  beans with kaklo",
@@ -97,24 +209,9 @@ export const serviceContent = {
             ]
         },
         {
-            label: 'Premium package',
-            imageurl:"/images/buffet2.jpg",
-            perHead: '200',
-            foodList: [
-                "jollof",
-                "waakye",
-                "fried rice",
-                "fried chicken",
-                "fried fish",
-                "salad",
-                'spaghetti or kelewele',
-                "banku with okro stew"
-            ]
-        },
-        {
             label: 'Platinum package',
             imageurl:"/images/fulloption.jpg",
-            perHead: '200',
+            perHead: '75',
             foodList: [
                 "fufu with soup",
                 "bank with grilled tilapia + okro soup",
@@ -135,55 +232,28 @@ export const serviceContent = {
         {
             label: 'Diamond package',
             imageurl:"/images/orderpack.jpg",
-            perHead: '200',
+            perHead: '85',
             foodList: [
                 "kenkey and fried fish",
-                "gari and beans",
-                "jollof rice"
-            ]
-        },
-        {
-            label: 'Emerald package',
-            imageurl:"/images/redpack.jpg",
-            perHead: '200',
-            foodList: [
-                "rice and stew",
-                "banku and tilapia",
-                "abunabune nkwan"
-            ]
-        },
-        {
-            label: 'standard package',
-            imageurl:"/images/packs.jpg",
-            perHead: '200',
-            foodList: [
+                "fried chicken or grilled chicken",
                 "jollof",
                 "waakye",
-                "fried rice",
-                "fried chicken",
                 "fried fish",
                 "salad",
-                "spaghetti"
-            ]
-        },
-        {
-            label: 'standard package',
-            imageurl:"/images/fulloption.jpg",
-            perHead: '200',
-            foodList: [
-                "jollof",
-                "waakye",
-                "fried rice",
-                "fried chicken",
-                "fried fish",
-                "salad",
-                "spaghetti"
+                "spaghetti  or vegetable stir fry",
+                "vegetable rice",
+                "gizzard or pork khebab and goat khebab",
+                "kelewele",
+                "banku with grilled tilapia and okro stew",
+                "fufu with goat light soup or chicken wings,light soup",
+                "richball with  groundnut soup or kenkey with family.",
+                "ampesi with palava sauce"
             ]
         },
         {       
             label: "esi's special package",
             imageurl:"/images/eat.jpg",
-            perHead: '200',
+            perHead: '105',
             foodList: [
                 "assorted jollof",
                 "waakye",
@@ -194,8 +264,8 @@ export const serviceContent = {
                 "spaghetti",
                 "vegetable rice",
                 "gizzard, pork ,  goat , khebab",
-                "kelewele",
                 "banku with grilled tilapia and okro stew",
+                "kelewele",
                 "fufu with ebunuenunu",
                 "fufu with goat light soup",
                 "kokonte or riceball with groundnut soup",
