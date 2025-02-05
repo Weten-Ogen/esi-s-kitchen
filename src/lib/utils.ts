@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 
 
 export const formSchema = z.object({
-    name: z.string(),
+    nameOfClient: z.string(),
     services: z.string(),
     packages: z.string(),
     numberPerHead: z.string(),

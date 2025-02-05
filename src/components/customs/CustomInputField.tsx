@@ -25,25 +25,33 @@ const CustomSelectField = (props: customprops) => {
       control={props.control}
       name={props.name}
       render={({ field }) => (
-        <FormItem className="">
-          <FormLabel className="font-bold font-poppins text-primaryFont">
+        <FormItem className="w-full ">
+          <FormLabel
+               className="font-bold font-poppins text-primaryFont capitalize  tracking-wider"
+              >
             {props.label}
           </FormLabel>
           <div className="flex w-full flex-col bg-white p-2 rounded-lg">
             <FormControl>
-            <Select {...field}>
+            <Select  
+              {...field}
+            >
                 <SelectTrigger>
-                    <SelectValue placeholder={props.placeholder} />
+                    <SelectValue 
+                    placeholder={props.placeholder} 
+                    />
                 </SelectTrigger>
-                <SelectContent className='w-full bg-white p-2'>
+                <SelectContent 
+                className='w-full bg-white p-2'>
                     {
                         props.values.map((item) => {
                             return (
                                 <SelectItem
-                                {...field} 
-                                className='bg-white w-full  '
+                                className='bg-white w-full '
+                                {...field}
                                 key={item.label} 
-                                value={item.label}>
+                                value={item.label}
+                                >
                                     {item.label}
                                 </SelectItem>
                             )

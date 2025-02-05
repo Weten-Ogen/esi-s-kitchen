@@ -25,7 +25,7 @@ const NavBar = (props : navprops) => {
         {generalContent.LogoName}
     </h4>
       </div>
-      <div className=''>
+      <div className='hidden'>
           <SearchBtn/>
       </div>
       <div className='p-2'>

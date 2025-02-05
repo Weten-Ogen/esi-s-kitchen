@@ -10,20 +10,20 @@ const FormSchema = formSchema
 
 interface customprops {
     className?: string,
-    control: Control< z.infer < typeof FormSchema >>,
-    name: FieldPath< z.infer < typeof FormSchema >>,
+    control: Control<z.infer <typeof FormSchema>>,
+    name: FieldPath< z.infer <typeof FormSchema>>,
     label:string,
     placeholder:string,
  }
 
 const CustomInputField = (props: customprops) => {
-  return (
-    <FormField
+  return ( 
+  <FormField
       control={props.control}
       name={props.name}
       render={({ field }) => (
-        <FormItem className="">
-          <FormLabel className="font-bold font-poppins text-primaryFont">
+        <FormItem className="w-full">
+          <FormLabel className="font-bold text-white tracking-wider font-poppins text-primaryFont">
             {props.label}
           </FormLabel>
           <div className="flex w-full flex-col">
@@ -32,12 +32,11 @@ const CustomInputField = (props: customprops) => {
                   {...field}
                   placeholder={props.placeholder}
                   className="py-6 px-4 bg-white"
-                  type={props.name === 'dateOfEvent' ? 'date': 'text'
-                  }
-                  />
+                  type={props.name === "dateOfEvent"? "date": "text"}
+                />
             </FormControl>
           </div>
             <FormMessage className="form-message font-poppins text-red-500 mt-2 text-extraSmall" />
-          </FormItem>)}/>)}
-
+          </FormItem>)}
+    />)}
 export default CustomInputField

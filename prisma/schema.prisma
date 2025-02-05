@@ -17,11 +17,16 @@ model User {
   sessions      Session[]
   // Optional for WebAuthn support
   Authenticator Authenticator[]
- 
+  role Role @default(USER)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
  
+enum Role {
+   ADMIN
+   USER
+   WORKER
+}
 model Account {
   userId            String
   type              String
@@ -75,4 +80,17 @@ model Authenticator {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
  
   @@id([userId, credentialID])
+}
+
+
+model Booking {
+  id            String   @id @default(cuid())
+  name          String
+  services    String
+  packages     String
+  numberPerHead String
+  typeOfEvent   String
+  location     String
+  contact      String
+  dateOfEvent  String
 }
